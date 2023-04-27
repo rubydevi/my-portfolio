@@ -14,16 +14,25 @@ body {
   padding: 12px 25px 12px 24px;
 }
 
+.main-nav {
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .logo {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  float: left;
+  margin-right: auto;
 }
 
 .setting-mobile {
-  float: right;
+  margin-left: auto;
 }
 
 nav {
