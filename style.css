@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Crete Round');
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Inter');
 
 body {
   margin: 0 auto;
@@ -134,4 +135,78 @@ a {
   color: #212121;
   border: 1px solid;
   max-height: 0;
+}
+
+/* Cards Style */
+.card {
+  color: #091e42;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  border: 1px solid #ccc;
+  overflow: hidden;
+
+  /* Take off the border before final submission */
+}
+
+.card-img {
+  grid-row: 1 / 2;
+  width: 100%;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  grid-row: 2 / 3;
+}
+
+.card-title {
+  margin: 24px 0 12px 0;
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+}
+
+.card-description {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.card-tags {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  grid-row: 3 / 4;
+  gap: 0.5rem;
+}
+
+.card-tag {
+  padding: 10px 12px;
+  border: 1px solid #8993a4;
+  background-color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.card-button {
+  padding: 12px;
+  background-color: #ff6b00;
+  color: #fff;
+  border: none;
+  width: 124px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
 }
