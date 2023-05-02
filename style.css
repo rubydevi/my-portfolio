@@ -337,3 +337,20 @@ a {
 .btn-contact {
   width: 41%;
 }
+
+::placeholder {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+input::placeholder {
+  font-style: normal;
+  color: #979493;
+}
+
+textarea::placeholder {
+  font-style: italic;
+  color: #3c3a39;
+}
