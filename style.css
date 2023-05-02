@@ -295,3 +295,74 @@ a {
   font-weight: 300;
   padding: 0;
 }
+
+/* Contact Form Style */
+.section-contact-form {
+  margin: 0 auto;
+  padding: 24% 8.6% 20% 8%;
+}
+
+.text-dark {
+  margin: 0 auto;
+  color: #172b4d;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 138%;
+  text-align: center;
+}
+
+.form-elements {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  padding-top: 25%;
+}
+
+.form-input {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-bottom: 1px solid #dbdbd7;
+  outline: none;
+}
+
+.form-textarea {
+  background: #fbf8f7;
+  border: none;
+}
+
+.btn-contact {
+  width: 41%;
+}
+
+::placeholder {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+input::placeholder {
+  font-style: normal;
+  color: #979493;
+}
+
+textarea::placeholder {
+  font-style: italic;
+  color: #3c3a39;
+}
+
+.footer-line {
+  margin: 0;
+  color: #dfe1e6;
+}
+
+.social-media-footer {
+  padding: 10px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
