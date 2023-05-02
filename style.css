@@ -354,3 +354,13 @@ textarea::placeholder {
   font-style: italic;
   color: #3c3a39;
 }
+
+.footer-line {
+  margin: 0;
+  color: #dfe1e6;
+}
+
+.social-media-footer{
+  padding: 10px 0;
+  justify-content: center;
+}
