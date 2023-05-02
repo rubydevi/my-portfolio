@@ -360,7 +360,9 @@ textarea::placeholder {
   color: #dfe1e6;
 }
 
-.social-media-footer{
+.social-media-footer {
   padding: 10px 0;
-  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
