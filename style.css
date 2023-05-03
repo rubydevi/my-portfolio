@@ -604,4 +604,36 @@ textarea::placeholder {
   .dropdown-list {
     align-items: flex-start;
   }
+
+  /* Contact Form */
+  
+  .section-contact-form {
+    margin: 0;
+    padding: 130px 142px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .text-dark {
+    width: 50%;
+    margin: 0;
+    text-align: unset;
+  }
+
+  .form-elements {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    padding-top: 0;  
+  }
+
+  .main-line {
+    width: 100%;
+  }
+
+  .social-media-footer {
+    margin: 0;
+  }
 }
