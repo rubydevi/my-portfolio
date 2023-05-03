@@ -369,17 +369,20 @@ textarea::placeholder {
 
 /* Desktop Version Style */
 @media only screen and (min-width: 768px) {
+  .setting-mobile {
+    display: none;
+  }
+
   .bg-primary {
     display: flex;
     background-color: #1c1a19;
     max-width: 100vw;
-    max-height: 100vh;
+    height: 200%;
     padding: 120px 24px;
   }
 
   .container {
     width: 40%;
-    min-height: 100vh;
   }
 
   .bg-image1 {
@@ -447,5 +450,34 @@ textarea::placeholder {
   .social-media > li {
     list-style: none;
     margin: 10px 0;
+  }
+
+  /* Work section */
+  .main-container-works {
+    padding: 120px 141px;
+  }
+
+  .main-title-work {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    /* justify-content: space-between; */
+  }
+
+  .main-text-work {
+    width: 35%;
+  }
+
+  .main-line {
+    margin: 0;
+    width: 65%;
+  }
+
+  .bg-image3 {
+    background-image: url(images/workThumbnails/work2.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 }
