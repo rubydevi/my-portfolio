@@ -461,8 +461,6 @@ textarea::placeholder {
     display: flex;
     flex-direction: row;
     align-items: center;
-
-    /* justify-content: space-between; */
   }
 
   .main-text-work {
@@ -479,5 +477,46 @@ textarea::placeholder {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+  }
+
+  /* Cards */
+  .card {
+    display: grid;
+    margin-top: 114px;
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+      "card-img card-body"
+      "card-img card-body"
+      "card-tags card-tags";
+    gap: 24px;
+  }
+
+  .card-img {
+    grid-area: card-img;
+  }
+
+  .card-img img {
+    content: url("/images/desktopVersion/recentWorkCard1.png");
+  }
+
+  .card-body {
+    grid-area: card-body;
+    justify-content: inherit;
+  }
+
+  .card-title {
+    margin: 0;
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .card-description {
+    margin-top: 24px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .card-tags {
+    grid-area: card-tags;
   }
 }
