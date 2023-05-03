@@ -519,4 +519,16 @@ textarea::placeholder {
   .card-tags {
     grid-area: card-tags;
   }
+
+  .card-button:hover {
+    cursor: pointer;
+    background-color: #fff5e1;
+    border: 1px solid #f55800;
+    color: #f55800;
+  }
+
+  .card-button:active {
+    background-color: #e05304;
+    color: #f4f1f0;
+  }
 }
