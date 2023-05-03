@@ -472,13 +472,6 @@ textarea::placeholder {
     width: 65%;
   }
 
-  .bg-image3 {
-    background-image: url(images/workThumbnails/work2.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
-
   /* Cards */
   .card {
     display: grid;
@@ -530,5 +523,45 @@ textarea::placeholder {
   .card-button:active {
     background-color: #e05304;
     color: #f4f1f0;
+  }
+
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-gap: 24px;
+    margin: 10% 0 0 0;
+  }
+
+  .child-card > .card-body > .card-button {
+    display: none;
+  }
+
+  .bg-image3 {
+    background-image: url(images/desktopVersion/cardBackground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .bg-image3:hover {
+    background-image: url(images/desktopVersion/cardBackgroundHover.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .bg-image3:hover .card-title,
+  .bg-image3:hover .card-description,
+  .bg-image3:hover .child-tags {
+    display: none;
+  }
+
+  .bg-image3:hover .card-button {
+    display: block;
+  }
+
+  .child-card {
+    padding: 0;
+    margin: 0;
   }
 }
