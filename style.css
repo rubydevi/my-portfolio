@@ -536,6 +536,11 @@ textarea::placeholder {
     display: none;
   }
 
+  .child-button {
+    position: relative;
+    margin: 0;
+  }
+
   .bg-image3 {
     background-image: url(images/desktopVersion/cardBackground.png);
     background-repeat: no-repeat;
@@ -557,7 +562,7 @@ textarea::placeholder {
   }
 
   .bg-image3:hover .card-button {
-    display: block;
+    display: inline-block;
   }
 
   .child-card {
@@ -615,12 +620,13 @@ textarea::placeholder {
   }
 
   .text-dark {
-    width: 50%;
+    flex-basis: 50%;
     margin: 0;
     text-align: unset;
   }
 
   .form-elements {
+    flex-basis: 50%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -633,7 +639,20 @@ textarea::placeholder {
     width: 100%;
   }
 
+  .main-footer {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
   .social-media-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+    align-items: center;
+    padding: 0;
     margin: 0;
   }
 }
