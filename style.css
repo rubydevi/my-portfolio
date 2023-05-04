@@ -36,6 +36,10 @@ body {
   margin-left: auto;
 }
 
+.ds-ul {
+  display: none;
+}
+
 nav {
   width: 100%;
 }
@@ -373,6 +377,30 @@ textarea::placeholder {
     display: none;
   }
 
+  .nav-section {
+    padding: 12px 0;
+  }
+
+  .ds-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .ds-ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+  }
+
+  .text-nav {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+  }
+
   .bg-primary {
     display: flex;
     background-color: #1c1a19;
@@ -467,11 +495,6 @@ textarea::placeholder {
     width: 35%;
   }
 
-  .main-line {
-    margin: 0;
-    width: 65%;
-  }
-
   /* Cards */
   .card {
     display: grid;
@@ -536,6 +559,30 @@ textarea::placeholder {
     display: none;
   }
 
+  .child-card {
+    padding: 0;
+    margin: 0;
+    gap: 0;
+    height: 435px;
+    align-items: end;
+  }
+
+  .child-title {
+    font-size: 32px;
+    line-height: 44px;
+    padding: 0 24px;
+  }
+
+  .child-description {
+    font-size: 17px;
+    line-height: 24px;
+    padding: 0 24px;
+  }
+
+  .child-tags {
+    padding: 0 24px;
+  }
+
   .child-button {
     position: relative;
     margin: 0;
@@ -563,11 +610,6 @@ textarea::placeholder {
 
   .bg-image3:hover .card-button {
     display: inline-block;
-  }
-
-  .child-card {
-    padding: 0;
-    margin: 0;
   }
 
   /* About Me */
@@ -611,12 +653,16 @@ textarea::placeholder {
   }
 
   /* Contact Form */
-  
+  .contact-form {
+    width: 100%;
+  }
+
   .section-contact-form {
     margin: 0;
     padding: 130px 142px;
     display: flex;
     flex-direction: row;
+    gap: 30px;
   }
 
   .text-dark {
@@ -632,15 +678,19 @@ textarea::placeholder {
     flex-direction: column;
     gap: 20px;
     align-items: flex-start;
-    padding-top: 0;  
+    padding-top: 0;
+  }
+
+  .btn-contact {
+    width: 150px;
   }
 
   .main-line {
+    margin: 0;
     width: 100%;
   }
 
   .main-footer {
-    
     display: flex;
     flex-direction: row;
     justify-content: center;
