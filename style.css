@@ -610,4 +610,44 @@ textarea::placeholder {
   .bg-image3:hover .card-button {
     display: inline-block;
   }
+
+  /* About Me */
+  .about-section {
+    padding: 120px 142px;
+  }
+
+  .bg-image2 {
+    background-image: url(images/desktopVersion/aboutMeBackground.png);
+    background-position-y: 120px;
+  }
+
+  .main-line-white {
+    margin-top: 139px;
+  }
+
+  .tech-list {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .new-list {
+    font-family: unset;
+    font-style: unset;
+    font-weight: unset;
+    font-size: unset;
+    line-height: unset;
+    display: unset;
+    flex-direction: unset;
+    align-items: unset;
+    padding: unset;
+    row-gap: unset;
+  }
+
+  .dropdown-list {
+    align-items: flex-start;
+  }
 }
