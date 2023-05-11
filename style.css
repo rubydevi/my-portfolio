@@ -546,11 +546,17 @@ textarea::placeholder {
     background-color: #fff5e1;
     border: 1px solid #f55800;
     color: #f55800;
+
+    /* Transition Code */
+    transition: all 0.3s linear;
   }
 
   .card-button:active {
     background-color: #e05304;
     color: #f4f1f0;
+
+    /* Transition Code */
+    transition: all 0.3s linear;
   }
 
   .card-grid {
