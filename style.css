@@ -36,6 +36,10 @@ body {
   margin-left: auto;
 }
 
+.ds-ul {
+  display: none;
+}
+
 nav {
   width: 100%;
 }
@@ -168,6 +172,10 @@ a {
 
 .card-img {
   grid-row: 1 / 2;
+  width: 100%;
+}
+
+#img_recentWork {
   width: 100%;
 }
 
@@ -364,7 +372,8 @@ textarea::placeholder {
   padding: 10px 0;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 /* Desktop Version Style */
@@ -650,7 +659,7 @@ textarea::placeholder {
   .dropdown-list {
     align-items: flex-start;
   }
-
+  
   /* Contact Form */
   .contact-form {
     width: 100%;
