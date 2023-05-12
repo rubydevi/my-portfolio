@@ -411,9 +411,8 @@ textarea::placeholder {
     display: flex;
     background-color: #1c1a19;
     max-width: 100vw;
-    height: 200%;
     padding: 120px 24px;
-    min-height: 100vh;
+    min-height: 70vh;
   }
 
   .container {
