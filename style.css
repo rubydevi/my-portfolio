@@ -696,6 +696,10 @@ textarea::placeholder {
     width: 8%;
   }
 
+  #li-diamond {
+    width: 12%;
+  }
+
   .new-list {
     font-family: unset;
     font-style: unset;
@@ -721,16 +725,17 @@ textarea::placeholder {
 
   .section-contact-form {
     margin: 0;
-    padding: 130px 142px;
+    padding: 8%;
     display: flex;
     flex-direction: row;
     gap: 30px;
   }
 
   .text-dark {
-    flex-basis: 50%;
+    flex-basis: 54%;
     margin: 0;
     text-align: unset;
+    font-size: 2.8vw;
   }
 
   .form-elements {
@@ -738,13 +743,28 @@ textarea::placeholder {
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 3vh;
     align-items: flex-start;
     padding-top: 0;
   }
 
   .btn-contact {
-    width: 150px;
+    width: 22%;
+    padding: 2%;
+    box-sizing: border-box; /* include border width in total width and height */
+    border: 1px solid transparent; /* add a transparent border */
+  }
+
+  .btn-contact:hover {
+    cursor: pointer;
+    background-color: #fff5e1;
+    border-color: #f55800; /* change border color on hover */
+    color: #f55800;
+  }
+
+  .btn-contact:active {
+    background-color: #e05304;
+    color: #f4f1f0;
   }
 
   .main-line {
