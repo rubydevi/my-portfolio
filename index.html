@@ -9,66 +9,87 @@
 </head>
 <body>
   <header class="nav-section">
-      <nav>
-        <ul class="main-nav">
-          <li>
-            <a href="#" class="text-white logo">My Logo</a>
-          </li>
-          <li class="setting-mobile">
-            <a href="#">
-              <img src="images/ham_setting.svg" alt="">
-            </a>
-          </li>
-        </ul>  
-      </nav>
-  </header>
-  <section class="bg-primary bg-image1">
-      <div>
-          <p class="text-primary">
-            Hey There. I’m Ruby.
-          </p>
-          <p class="text-supportive">
-              I'm a Software Developer
-          </p>
-          <p class="text-description">
-              I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
+    <nav class="ds-nav">
+      <ul class="main-nav">
+        <li>
+          <a href="#" class="text-white logo">My Logo</a>
+        </li>
+        <li class="setting-mobile">
+          <a href="#">
+            <img src="images/ham_setting.svg" alt="">
+          </a>
+        </li>
+      </ul> 
+      <ul class="no-decoration ds-ul">          
+        <li>
+          <a class="text-white text-nav" href="#portfolio">Portfolio</a>
+        </li>
+        <li>
+          <a class="text-white text-nav" href="#AboutMe">About</a>
+        </li>
+        <li>
+          <a class="text-white text-nav" href="#contact">Contact</a>
+        </li>
+        <li>
+          <a class="text-white text-nav" href="#"><img src="images/desktopVersion/mailIcon.png" alt="mail icon"></a>
+        </li>
+      </ul> 
+    </nav>
+</header>
+<section class="bg-primary bg-image1">
+    <div class="container">
+      <div class="text-column">
+        <h1 class="text-primary">
+          Hey There. I’m Ruby.
+        </h1>
+        <p class="text-supportive">
+            I'm a Software Developer
+        </p>
+        <p class="text-description">
+            I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
 don’t hesitate to contact me.
-          </p>
-          <div class="social-media-section">
-            <ul class="social-media">
-              <li>
-                  <a href="#"><img class="img-flex" src="images/socialMediaIcons/giticon.png" alt="github icon"></a>
-              </li>
-              <li>
-                  <a href="#"><img class="img-flex" src="images/socialMediaIcons/linkedIn.svg" alt="linkedIn icon"></a>
-              </li>
-              <li>
-                  <a href="#"><img class="img-flex" src="images/socialMediaIcons/angelist.png" alt="angelist icon"></a>
-              </li>
-              <li>
-                  <a href="#"><img class="img-flex" src="images/socialMediaIcons/twitter.png" alt="twitter icon"></a>
-              </li>
-              <li>
-                  <a href="#"><img class="img-flex" src="images/socialMediaIcons/medium.png" alt="medium icon"></a>
-              </li>
-          </ul>
-        </div>            
-      </div>       
-  </section>
-  <section class="main-container-works">
-    <h1 class="main-text-work">
-      My Recent Works
-    </h1>
+        </p>
+      </div>
+        
+      <div class="social-media-section">
+        <ul class="social-media">
+          <li>
+              <a href="#"><img class="img-flex" src="images/socialMediaIcons/giticon.png" alt="github icon"></a>
+          </li>
+          <li>
+              <a href="#"><img class="img-flex" src="images/socialMediaIcons/linkedIn.svg" alt="linkedIn icon"></a>
+          </li>
+          <li>
+              <a href="#"><img class="img-flex" src="images/socialMediaIcons/angelist.png" alt="angelist icon"></a>
+          </li>
+          <li>
+              <a href="#"><img class="img-flex" src="images/socialMediaIcons/twitter.png" alt="twitter icon"></a>
+          </li>
+          <li>
+              <a href="#"><img class="img-flex" src="images/socialMediaIcons/medium.png" alt="medium icon"></a>
+          </li>
+        </ul>
+      </div>            
+    </div>       
+</section>
+  <!-- Work Section Starts -->
+  <section id="portfolio" class="main-container-works">
+    <div class="main-title-work">
 
-    <hr class="main-line">
+      <h1 class="main-text-work">
+        My Recent Works
+      </h1>
+  
+      <hr class="main-line">
+    </div>
     <div class="card">
       <div class="card-img">
-        <img src="images/workThumbnails/work1.svg" alt="">
+        <img id="img_recentWork" src="images/desktopVersion/recentWorkCard1.png" alt="">
       </div>
       <div class="card-body">
         <h2 class="card-title">Multi-Post Stories</h2>
         <p class="card-description">
-          A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.
+          A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.
         </p>
         <ul class="card-tags">
           <li class="card-tag">
@@ -91,9 +112,9 @@ don’t hesitate to contact me.
     <div class="card-grid">
       <div class="card bg-image3 child-card">
         <div class="card-body">
-          <h2 class="card-title text-white">Profesional Art Printing Data</h2>
-          <p class="card-description text-white">
-            A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.
+          <h2 class="card-title text-white child-title">Profesional Art Printing Data</h2>
+          <p class="card-description text-white child-description">
+            A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.
           </p>
           <ul class="card-tags child-tags">
             <li class="card-tag child-tag">
@@ -111,9 +132,9 @@ don’t hesitate to contact me.
       </div>
       <div class="card bg-image3 child-card">
         <div class="card-body">
-          <h2 class="card-title text-white">Profesional Art Printing Data</h2>
-          <p class="card-description text-white">
-            A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.
+          <h2 class="card-title text-white child-title">Profesional Art Printing Data</h2>
+          <p class="card-description text-white child-description">
+            A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.
           </p>
           <ul class="card-tags child-tags">
             <li class="card-tag child-tag">
@@ -128,11 +149,72 @@ don’t hesitate to contact me.
           </ul>
         <button type="button" class="card-button child-button">See project</button>
         </div>
-      </div><div class="card bg-image3 child-card">
+      </div>
+      <div class="card bg-image3 child-card">
         <div class="card-body">
-          <h2 class="card-title text-white">Profesional Art Printing Data</h2>
-          <p class="card-description text-white">
-            A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.
+          <h2 class="card-title text-white child-title">Profesional Art Printing Data</h2>
+          <p class="card-description text-white child-description">
+            A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.
+          </p>
+          <ul class="card-tags child-tags">
+            <li class="card-tag child-tag">
+              HTML
+            </li>
+            <li class="card-tag child-tag">
+              Bootstrap
+            </li>
+            <li class="card-tag child-tag">
+              Ruby
+            </li>
+          </ul>
+        <button type="button" class="card-button child-button">See project</button>
+        </div>
+      </div>
+      <div class="card bg-image3 child-card">
+        <div class="card-body">
+          <h2 class="card-title text-white child-title">Profesional Art Printing Data</h2>
+          <p class="card-description text-white child-description">
+            A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.
+          </p>
+          <ul class="card-tags child-tags">
+            <li class="card-tag child-tag">
+              HTML
+            </li>
+            <li class="card-tag child-tag">
+              Bootstrap
+            </li>
+            <li class="card-tag child-tag">
+              Ruby
+            </li>
+          </ul>
+        <button type="button" class="card-button child-button">See project</button>
+        </div>
+      </div>
+      <div class="card bg-image3 child-card">
+        <div class="card-body">
+          <h2 class="card-title text-white child-title">Profesional Art Printing Data</h2>
+          <p class="card-description text-white child-description">
+            A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.
+          </p>
+          <ul class="card-tags child-tags">
+            <li class="card-tag child-tag">
+              HTML
+            </li>
+            <li class="card-tag child-tag">
+              Bootstrap
+            </li>
+            <li class="card-tag child-tag">
+              Ruby
+            </li>
+          </ul>
+        <button type="button" class="card-button child-button">See project</button>
+        </div>
+      </div>
+      <div class="card bg-image3 child-card">
+        <div class="card-body">
+          <h2 class="card-title text-white child-title">Profesional Art Printing Data</h2>
+          <p class="card-description text-white child-description">
+            A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.
           </p>
           <ul class="card-tags child-tags">
             <li class="card-tag child-tag">
@@ -150,21 +232,26 @@ don’t hesitate to contact me.
       </div>
     </div>      
   </section>
-  <section class="bg-primary bg-image2 about-section">
+  <!-- Work Section Ends -->
+
+  <!-- About Me Section Starts -->
+  <section id="AboutMe" class="bg-primary bg-image2 about-section">
     <div>
-      <h1 class="text-primary about-text">
-        About me
-      </h1>
-      <p class="text-description">
-        Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.
-      </p>        
-      <button type="button" class="card-button btn-about">Get my resume</button>
+      <div class="container contain-about">
+        <h1 class="text-primary about-text">
+          About me
+        </h1>
+        <p class="text-description">
+          Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.
+        </p>        
+        <button type="button" class="card-button btn-about">Get my resume</button>
+      </div>
 
       <hr class="main-line-white">
       <ul class="no-decoration text-white tech-list">
-        <li class="tech-list">
+        <li class="tech-list new-list">
           <span>
-            <img class="list-type-img" src="images/AboutMe/Rectangle.svg" alt=""> Language
+            <img id="li-diamond" class="list-type-img" src="images/AboutMe/Rectangle.svg" alt=""> Language
           </span>            
           <ul class="no-decoration dropdown-list">
             <li>
@@ -189,7 +276,7 @@ don’t hesitate to contact me.
             </li>
           </ul>
         </li>
-        <li class="tech-list">
+        <li class="tech-list new-list">
           <span>
             <img class="list-type-img" src="images/AboutMe/Square.svg" alt=""> Frameworks
           </span>
@@ -214,9 +301,14 @@ don’t hesitate to contact me.
                 Capybara
               </a>
             </li>
+            <li>
+              <a href="#" class="text-white no-decoration">
+                Selenium
+              </a>
+            </li>
           </ul>
         </li>
-        <li class="tech-list">
+        <li class="tech-list new-list">
           <span>
             <img class="list-type-img" src="images/AboutMe/Disc.svg" alt="">
             Skills
@@ -252,12 +344,14 @@ don’t hesitate to contact me.
       </ul>
     </div>      
   </section>
+  <!-- About Me Section Ends -->
+  
   <!-- Contact Form Starts -->
-  <section class="section-contact-form">
+  <section id="contact" class="section-contact-form">
     <h1 class="text-dark">
       I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
     </h1>
-    <form action="https://formspree.io/f/xoqzrdep" method="post">
+    <form action="https://formspree.io/f/xoqzrdep" method="post" class="contact-form">
       <div class="form-elements">
         <input type="text" maxlength="30" placeholder="Full name" class="form-input" name="fullname" required>
         <input type="email" placeholder="Email address" class="form-input" name="email" required>
@@ -271,7 +365,7 @@ don’t hesitate to contact me.
   <!-- Footer Starts -->
   <footer class="main-footer">    
     <div class="social-media-section social-media-footer">
-      <ul class="social-media">
+      <ul class="social-media social-media-footer">
         <li>
             <a href="#"><img class="img-flex" src="images/socialMediaIcons/footerImages/gitIconDark.png" alt="github icon"></a>
         </li>
