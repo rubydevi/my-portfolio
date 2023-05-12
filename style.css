@@ -241,8 +241,9 @@ a {
 }
 
 .child-tag {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.25);
   color: #fff;
+  border: unset;
 }
 
 .child-button {
@@ -551,7 +552,6 @@ textarea::placeholder {
     font-size: 1.1vw;
     padding: 3% 4%;
     line-height: 110%;
-    border: unset;
   }
 
   .card-button {
@@ -645,16 +645,41 @@ textarea::placeholder {
 
   /* About Me */
   .about-section {
-    padding: 120px 142px;
+    padding: 8%;
   }
 
   .bg-image2 {
     background-image: url(images/desktopVersion/aboutMeBackground.png);
-    background-position-y: 120px;
+    background-position-y: 10%;
+    background-size: 45%;
+  }
+
+  .contain-about {
+    width: 50%;
+  }
+
+  .btn-about {
+    width: 26%;
+    margin: 3% 0;
+    padding: 2%;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+  }
+
+  .btn-about:hover {
+    cursor: pointer;
+    background-color: #fff5e1;
+    border-color: #f55800;
+    color: #f55800;
+  }
+
+  .btn-about:active {
+    background-color: #e05304;
+    color: #f4f1f0;
   }
 
   .main-line-white {
-    margin-top: 139px;
+    margin: 12% 0;
   }
 
   .tech-list {
@@ -664,6 +689,11 @@ textarea::placeholder {
     padding: 0;
     flex-wrap: wrap;
     justify-content: space-between;
+    font-size: 2.28vw;
+  }
+
+  .list-type-img {
+    width: 8%;
   }
 
   .new-list {
@@ -681,6 +711,7 @@ textarea::placeholder {
 
   .dropdown-list {
     align-items: flex-start;
+    font-size: 1.5vw;
   }
 
   /* Contact Form */
