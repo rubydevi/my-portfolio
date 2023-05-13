@@ -5,6 +5,7 @@
 - [📖 About the Project](#about-project)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -38,6 +39,14 @@
 - **Configured Linters**
 - **Added an HTML File**
 - **Added a CSS file**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo Link](https://rubydevi.github.io/my-portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
