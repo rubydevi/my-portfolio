@@ -418,6 +418,8 @@ textarea::placeholder {
 
 .modalNav {
   padding: 0 5%;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
 }
 
 .modalNav li {
