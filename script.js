@@ -1,13 +1,13 @@
-const openNav = document.getElementById("btnSetting");
-const modalNav = document.getElementById("modalSetting");
-const closeNav = document.getElementById("btnCloseNav");
+const openNav = document.getElementById('btnSetting');
+const modalNav = document.getElementById('modalSetting');
+const closeNav = document.getElementById('btnCloseNav');
 
-openNav.addEventListener("click", () => {
-  modalNav.style.display = "flex";
+openNav.addEventListener('click', () => {
+  modalNav.style.display = 'flex';
 });
 
-closeNav.addEventListener("click", () => {
-  modalNav.style.display = "none";
+closeNav.addEventListener('click', () => {
+  modalNav.style.display = 'none';
 });
 
 const menuLists = document.querySelectorAll('#menuList li');

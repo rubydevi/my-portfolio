@@ -402,10 +402,10 @@ textarea::placeholder {
   flex-direction: column;
   flex-wrap: wrap;
   align-content: flex-start;
-  padding: 0px;
+  padding: 0;
 }
 
-.modalContent {  
+.modalContent {
   padding: 5%;
   margin: 0 auto;
 }
