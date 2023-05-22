@@ -36,6 +36,12 @@ body {
   margin-left: auto;
 }
 
+.btn-icon {
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
 .ds-ul {
   display: none;
 }
@@ -375,6 +381,55 @@ textarea::placeholder {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+}
+
+/* Modal Pop Up */
+.modalContainer {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 9999;
+  padding: 5%;
+}
+
+#modalSetting {
+  display: none;
+  background-color: rgb(60, 58, 57);
+  width: 100%;
+  font-size: 2em;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  padding: 0;
+}
+
+.modalContent {
+  padding: 5%;
+  margin: 0 auto;
+}
+
+#modalContentSetting {
+  background-color: #3c3a39;
+  width: 100%;
+  padding: 0;
+}
+
+.modalNav {
+  padding: 0 5%;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+}
+
+.modalNav li {
+  padding: 2%;
+  border-bottom: 1px solid #6f6c6b;
+}
+
+#btnCloseNav {
+  margin: 5%;
+  float: right;
 }
 
 /* Desktop Version Style */

@@ -15,9 +15,9 @@
           <a href="#" class="text-white logo">My Logo</a>
         </li>
         <li class="setting-mobile">
-          <a href="#">
+          <button id="btnSetting" type="button" class="btn-icon">
             <img src="images/ham_setting.svg" alt="">
-          </a>
+          </button>
         </li>
       </ul> 
       <ul class="no-decoration ds-ul">          
@@ -36,6 +36,30 @@
       </ul> 
     </nav>
 </header>
+
+<!-- Modal Settings Starts -->
+<section id="modalSetting" class="modalContainer">
+  <div id="modalContentSetting" class="modalContent">
+    <button id="btnCloseNav" class="btn-icon">
+      <img src="images/modalPopup/cross.png" alt="">
+    </button>
+    <div>
+      <ul id="menuList" class="no-decoration modalNav">
+        <li>
+          <a class="text-white" href="#portfolio">Portfolio</a>
+        </li>
+        <li>
+          <a class="text-white" href="#AboutMe">About</a>
+        </li>
+        <li>
+          <a class="text-white" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+<!-- Modal Settings Starts -->
+
 <section class="bg-primary bg-image1">
     <div class="container">
       <div class="text-column">
@@ -385,5 +409,7 @@ don’t hesitate to contact me.
     </div> 
   </footer>
   <!-- Footer Ends -->
+  
+  <script src="script.js"></script>
 </body>
 </html>
