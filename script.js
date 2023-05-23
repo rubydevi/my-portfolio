@@ -82,6 +82,8 @@ const projects = [
 ];
 
 const projectsContainer = document.getElementById('projectsContainer'); // .card grid in my case
+const modalProject = document.getElementById('modalProject');
+
 projects.forEach((project) => {
   const projectElement = document.createElement('div'); // div for each project = projectElement
   projectElement.classList.add('card', 'bg-image3', 'child-card');
@@ -99,4 +101,34 @@ projects.forEach((project) => {
   `;
 
   projectsContainer.appendChild(projectElement); // append all the cards inside .card-grid div
+
+  const populateModal = (project) => {
+    const modalTitle = document.getElementById('modalTitle');
+    const modalTags = document.getElementById('modalTags');
+    const modalImage = document.getElementById('modalImage');
+    const modalDescription = document.getElementById('modalDescription');
+    const modalLiveLink = document.getElementById('modalLiveLink');
+    const modalSourceLink = document.getElementById('modalSourceLink');
+
+    modalTitle.textContent = project.name;
+    modalTags.innerHTML = project.technologies.map((tech) => `<li class="card-tag">${tech}</li>`).join('');
+    modalImage.src = project.image;
+    modalImage.alt = project.name;
+    modalDescription.textContent = project.description;
+    modalLiveLink.href = project.liveLink;
+    modalSourceLink.href = project.sourceLink;
+  };
+
+  const childButton = projectElement.querySelector('.child-button');
+  childButton.addEventListener('click', () => {
+    populateModal(project);
+    modalProject.style.display = 'flex';
+  });
+});
+
+// Close button event listener
+const btnClose = document.getElementById('btnClose');
+
+btnClose.addEventListener('click', () => {
+  modalProject.style.display = 'none';
 });
