@@ -432,6 +432,10 @@ textarea::placeholder {
   float: right;
 }
 
+#modalContentProject {
+  background-color: #fff;
+}
+
 /* Desktop Version Style */
 @media only screen and (min-width: 768px) {
   .setting-mobile {
