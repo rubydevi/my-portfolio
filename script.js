@@ -80,3 +80,5 @@ let projects = [
     sourceLink: "https://github.com/project1"
   }
 ];
+
+let projectsContainer = document.getElementById("projectsContainer"); // .card grid in my case
