@@ -28,3 +28,55 @@ menuLists.forEach((lists) => {
     event.preventDefault();
   });
 });
+
+// Modal Popup for Projects
+let projects = [
+  {
+    name: "Profesional Art Printing Data",
+    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
+    image: "images/work1.svg",
+    technologies: ["HTML", "Bootstrap", "Ruby"],
+    liveLink: "https://example.com/project1",
+    sourceLink: "https://github.com/project1"
+  },
+  {
+    name: "Data Dashboard Healthcare",
+    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
+    image: "images/work2.svg",
+    technologies: ["HTML", "Bootstrap", "Ruby"],
+    liveLink: "https://example.com/project1",
+    sourceLink: "https://github.com/project1"
+  },
+  {
+    name: "Website Portfolio 1",
+    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
+    image: "images/work2.svg",
+    technologies: ["HTML", "Bootstrap", "Ruby"],
+    liveLink: "https://example.com/project1",
+    sourceLink: "https://github.com/project1"
+  },
+  {
+    name: "Profesional Art Printing Data",
+    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
+    image: "images/work2.svg",
+    technologies: ["HTML", "Bootstrap", "Ruby"],
+    liveLink: "https://example.com/project1",
+    sourceLink: "https://github.com/project1"
+  },
+  {
+    name: "Data Dashboard Healthcare",
+    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
+    image: "images/work2.svg",
+    technologies: ["HTML", "Bootstrap", "Ruby"],
+    liveLink: "https://example.com/project1",
+    sourceLink: "https://github.com/project1"
+  },
+  {
+    name: "Website Portfolio 2",
+    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
+    image: "images/work2.svg",
+    technologies: ["HTML", "Bootstrap", "Ruby"],
+    liveLink: "https://example.com/project1",
+    sourceLink: "https://github.com/project1"
+  }
+];
