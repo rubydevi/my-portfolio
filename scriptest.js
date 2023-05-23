@@ -77,7 +77,7 @@ const projects = [
   {
     name: 'Data Dashboard Healthcare',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-    image: 'images/workThumbnails/work2.svg',
+    image: 'images/workThumbnails/work1.svg',
     technologies: ['HTML', 'Bootstrap', 'Ruby'],
     liveLink: 'https://rubydevi.github.io/my-portfolio',
     sourceLink: 'https://github.com/rubydevi/my-portfolio',
@@ -85,7 +85,7 @@ const projects = [
   {
     name: 'Website Portfolio ',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-    image: 'images/workThumbnails/work2.svg',
+    image: 'images/workThumbnails/work1.svg',
     technologies: ['HTML', 'Bootstrap', 'Ruby'],
     liveLink: 'https://rubydevi.github.io/my-portfolio',
     sourceLink: 'https://github.com/rubydevi/my-portfolio',
@@ -141,7 +141,7 @@ openProject.forEach((button, index) => {
         <p class="card-description modal-description">${project.description}</p>        
         <div>
           <a href="${project.liveLink}" class="card-button">See Live <img src="images/modalPopup/seeLiveDesktop.svg" alt=""></a>
-          <a href="${project.sourceLink}" class="card-button">See Source <img src="images/modalPopup/modalGitIcon.png" alt=""></a>
+          <a href="${project.sourceLink}" class="card-button">See Source <img src="images/socialMediaIcons/giticon.png" alt=""></a>
         </div>
       </div>
       `;
