@@ -432,8 +432,55 @@ textarea::placeholder {
   float: right;
 }
 
+/* Modal Projects */
 #modalContentProject {
   background-color: #fff;
+}
+
+/*
+.modalBody {
+
+} */
+
+.modalHead {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .modal-title {
+
+}
+
+.modal-tags {
+
+} */
+
+.modal-tag {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #3c3a39;
+}
+
+/* .modal-img {
+
+} */
+
+.modal-description {
+  margin: 5% 0;
+}
+
+.modalButtons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 /* Desktop Version Style */

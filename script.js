@@ -124,8 +124,8 @@ openProject.forEach((button, index) => {
     const project = projects[index];
     if (project) {
       modalContent.innerHTML = `
-      <div class="card-body">
-        <div style="display: flex;align-items: flex-start;">
+      <div class="card-body modalBody">
+        <div class="modalHead">
           <h1 class="card-title modal-title">${project.name}</h1>
           <button id="btnClose" type="button" class="btn-icon">
             <img src="images/modalPopup/imgCloseDark.png" alt="close">
@@ -133,15 +133,15 @@ openProject.forEach((button, index) => {
         </div>        
         <ul class="card-tags modal-tags">        
           ${project.technologies.map((tech) => `
-          <li class="card-tag">${tech}</li>`).join('')}
+          <li class="card-tag modal-tag">${tech}</li>`).join('')}
         </ul>
-        <div class="card-img">
+        <div class="card-img modal-img">
           <img id="img_recentWork" src="${project.image}" alt="${project.name}">
         </div>
         <p class="card-description modal-description">${project.description}</p>        
-        <div>
-          <a href="${project.liveLink}" class="card-button">See Live <img src="images/modalPopup/seeLiveDesktop.svg" alt=""></a>
-          <a href="${project.sourceLink}" class="card-button">See Source <img src="images/modalPopup/modalGitIcon.png" alt=""></a>
+        <div class="modalButtons">
+          <a href="${project.liveLink}" class="card-button modal-button">See Live <img src="images/modalPopup/seeLiveDesktop.svg" alt=""></a>
+          <a href="${project.sourceLink}" class="card-button modal-button">See Source <img src="images/modalPopup/modalGitIcon.png" alt=""></a>
         </div>
       </div>
       `;
