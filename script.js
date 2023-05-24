@@ -77,7 +77,7 @@ const projects = [
   {
     name: 'Data Dashboard Healthcare',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-    image: 'images/workThumbnails/work2.svg',
+    image: 'images/modalPopup/snapshootPortfolioDesktop.png',
     technologies: ['HTML', 'Bootstrap', 'Ruby'],
     liveLink: 'https://rubydevi.github.io/my-portfolio',
     sourceLink: 'https://github.com/rubydevi/my-portfolio',
@@ -85,7 +85,7 @@ const projects = [
   {
     name: 'Website Portfolio ',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-    image: 'images/workThumbnails/work2.svg',
+    image: 'images/modalPopup/snapshootPortfolioDesktop.png',
     technologies: ['HTML', 'Bootstrap', 'Ruby'],
     liveLink: 'https://rubydevi.github.io/my-portfolio',
     sourceLink: 'https://github.com/rubydevi/my-portfolio',
@@ -135,14 +135,16 @@ openProject.forEach((button, index) => {
           ${project.technologies.map((tech) => `
           <li class="card-tag modal-tag">${tech}</li>`).join('')}
         </ul>
-        <div class="card-img modal-img">
-          <img id="img_recentWork" src="${project.image}" alt="${project.name}">
-        </div>
-        <div class="modal-side">
-          <p class="card-description modal-description">${project.description}</p>        
-          <div class="modalButtons">
-            <a href="${project.liveLink}" class="card-button modal-button">See Live <img src="images/modalPopup/seeLiveDesktop.svg" alt=""></a>
-            <a href="${project.sourceLink}" class="card-button modal-button">See Source <img src="images/modalPopup/modalGitIcon.png" alt=""></a>
+        <div id="mainBody">
+          <div class="card-img modal-img">
+            <img id="imgModalWork" src="${project.image}" alt="${project.name}">
+          </div>
+          <div class="modal-side">
+            <p class="card-description modal-description">${project.description}</p>        
+            <div class="modalButtons">
+              <a href="${project.liveLink}" class="card-button modal-button">See Live <img src="images/modalPopup/seeLiveDesktop.svg" alt=""></a>
+              <a href="${project.sourceLink}" class="card-button modal-button">See Source <img src="images/modalPopup/modalGitIcon.png" alt=""></a>
+            </div>
           </div>
         </div>
       </div>

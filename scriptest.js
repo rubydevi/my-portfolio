@@ -135,13 +135,17 @@ openProject.forEach((button, index) => {
           ${project.technologies.map((tech) => `
           <li class="card-tag">${tech}</li>`).join('')}
         </ul>
-        <div class="card-img">
-          <img id="img_recentWork" src="${project.image}" alt="${project.name}">
-        </div>
-        <p class="card-description modal-description">${project.description}</p>        
-        <div>
-          <a href="${project.liveLink}" class="card-button">See Live <img src="images/modalPopup/seeLiveDesktop.svg" alt=""></a>
-          <a href="${project.sourceLink}" class="card-button">See Source <img src="images/socialMediaIcons/giticon.png" alt=""></a>
+        <div class="modal-body">
+          <div class="card-img modal-img">
+            <img id="img_recentWork" src="${project.image}" alt="${project.name}">
+          </div>
+          <div class="modal-side">
+            <p class="card-description modal-description">${project.description}</p>        
+            <div class="modalButtons">
+              <a href="${project.liveLink}" class="card-button modal-button">See Live <img src="images/modalPopup/seeLiveDesktop.svg" alt=""></a>
+              <a href="${project.sourceLink}" class="card-button modal-button">See Source <img src="images/modalPopup/modalGitIcon.png" alt=""></a>
+            </div>
+          </div>
         </div>
       </div>
       `;
