@@ -392,6 +392,8 @@ textarea::placeholder {
   height: 100%;
   z-index: 9999;
   padding: 5%;
+  padding-top: 15%;
+  backdrop-filter: blur(3px);
 }
 
 #modalSetting {
@@ -408,6 +410,8 @@ textarea::placeholder {
 .modalContent {
   padding: 5%;
   margin: 0 auto;
+  height: 80%;
+  overflow: auto;
 }
 
 #modalContentSetting {
@@ -430,6 +434,60 @@ textarea::placeholder {
 #btnCloseNav {
   margin: 5%;
   float: right;
+}
+
+/* Modal Projects */
+#modalContentProject {
+  background-color: #fff;
+}
+
+.modalBody {
+  max-height: 70vh;
+  grid-row: unset;
+}
+
+.modalHead {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-title {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 7.8vw;
+  line-height: 110%;
+  color: #172b4d;
+  margin-top: 0;
+}
+
+#imgModalWork {
+  display: flex;
+  width: 100%;
+}
+
+.modal-tag {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #3c3a39;
+}
+
+.modal-description {
+  margin: 5% 0;
+}
+
+.modalButtons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 /* Desktop Version Style */
@@ -840,5 +898,75 @@ textarea::placeholder {
     align-items: center;
     padding: 0;
     margin: 0;
+  }
+
+  /* Modal Projects starts */
+  #modalProject {
+    width: 100%;
+    padding: 0;
+  }
+
+  .modalContent {
+    margin: 8% 10%;
+    gap: unset;
+    width: 100%;
+    height: 83vh;
+    padding: 2%;
+  }
+
+  .modalHead {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .modal-title {
+    font-size: 2.2vw;
+    font-family: 'Crete Round', sans-serif;
+  }
+
+  .modal-tag {
+    font-size: 1vw;
+    line-height: 112%;
+    color: #3c3a39;
+    padding: 1%;
+  }
+
+  #mainBody {
+    display: flex;
+    align-items: flex-start;
+    margin: 3% 0;
+  }
+
+  .modal-description {
+    margin: 3% 0;
+    font-size: 1.1vw;
+    line-height: 130%;
+  }
+
+  .modalButtons {
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 5%;
+  }
+
+  .modal-button {
+    font-size: 1.1vw;
+  }
+
+  .card-img.modal-img {
+    display: flex;
+    width: 43vw;
+  }
+
+  #imgModalWork {
+    width: 100%;
+  }
+
+  .modal-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
   }
 }
