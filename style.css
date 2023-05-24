@@ -904,10 +904,11 @@ textarea::placeholder {
   }
 
   .modalContent {
-    margin: 5%;
+    margin: 8% 10%;
     gap: unset;
     width: 100%;
-    height: 100vh;
+    height: 83vh;
+    padding: 2%;
   }
 
   .modalHead {
@@ -951,6 +952,7 @@ textarea::placeholder {
 
   .card-img.modal-img {
     display: flex;
+    width: 43vw;
   }
 
   #imgModalWork {
