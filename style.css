@@ -449,13 +449,14 @@ textarea::placeholder {
   justify-content: space-between;
 }
 
-/* .modal-title {
+.modal-title {
   font-family: 'Roboto', sans-serif;
+  font-style: normal;
   font-weight: 700;
-  font-size: 7.2vw;
+  font-size: 32px;
   line-height: 44px;
   color: #172b4d;
-} */
+}
 
 #imgModalWork {
   display: flex;
