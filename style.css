@@ -392,6 +392,7 @@ textarea::placeholder {
   height: 100%;
   z-index: 9999;
   padding: 5%;
+  backdrop-filter: blur(3px);
 }
 
 #modalSetting {
@@ -447,14 +448,6 @@ textarea::placeholder {
   justify-content: space-between;
 }
 
-/* .modal-title {
-
-}
-
-.modal-tags {
-
-} */
-
 .modal-tag {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -463,10 +456,6 @@ textarea::placeholder {
   line-height: 16px;
   color: #3c3a39;
 }
-
-/* .modal-img {
-
-} */
 
 .modal-description {
   margin: 5% 0;
@@ -895,7 +884,6 @@ textarea::placeholder {
 
   /* Modal Projects */
   #modalProject {
-    background-color: #000;
     width: 100%;
     padding: 0;
   }
@@ -907,11 +895,6 @@ textarea::placeholder {
     height: 100vh;
   }
 
-  /*
-  .modalBody {
-
-  } */
-
   .modalHead {
     display: flex;
     justify-content: space-between;
@@ -921,20 +904,12 @@ textarea::placeholder {
     font-size: 2.2vw;
   }
 
-  /* .modal-tags {
-
-  } */
-
   .modal-tag {
     font-size: 1vw;
     line-height: 112%;
     color: #3c3a39;
     padding: 1%;
   }
-
-  /* .modal-img {
-
-  } */
 
   #mainBody {
     display: flex;
