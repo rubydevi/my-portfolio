@@ -393,6 +393,7 @@ textarea::placeholder {
   z-index: 9999;
   padding: 5%;
   backdrop-filter: blur(3px);
+  background-color: black; /* delete this before submit */
 }
 
 #modalSetting {
@@ -446,6 +447,19 @@ textarea::placeholder {
 .modalHead {
   display: flex;
   justify-content: space-between;
+}
+
+/* .modal-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 7.2vw;
+  line-height: 44px;
+  color: #172b4d;
+} */
+
+#imgModalWork {
+  display: flex;
+  width: 100%;
 }
 
 .modal-tag {

@@ -159,7 +159,8 @@ openFeaturedProjectButton.addEventListener('click', () => {
     name: 'Multi-Post Stories',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
     technologies: ['CSS', 'HTML', 'Bootstrap', 'Ruby'],
-    image: 'images/workThumbnails/work1.svg',
+    // image: 'images/workThumbnails/work1.svg',
+    image: 'images/desktopVersion/recentWorkCard1.png',
     liveLink: 'https://rubydevi.github.io/my-portfolio',
     sourceLink: 'https://github.com/rubydevi/my-portfolio',
   };
