@@ -138,10 +138,12 @@ openProject.forEach((button, index) => {
         <div class="card-img modal-img">
           <img id="img_recentWork" src="${project.image}" alt="${project.name}">
         </div>
-        <p class="card-description modal-description">${project.description}</p>        
-        <div class="modalButtons">
-          <a href="${project.liveLink}" class="card-button modal-button">See Live <img src="images/modalPopup/seeLiveDesktop.svg" alt=""></a>
-          <a href="${project.sourceLink}" class="card-button modal-button">See Source <img src="images/modalPopup/modalGitIcon.png" alt=""></a>
+        <div class="modal-side">
+          <p class="card-description modal-description">${project.description}</p>        
+          <div class="modalButtons">
+            <a href="${project.liveLink}" class="card-button modal-button">See Live <img src="images/modalPopup/seeLiveDesktop.svg" alt=""></a>
+            <a href="${project.sourceLink}" class="card-button modal-button">See Source <img src="images/modalPopup/modalGitIcon.png" alt=""></a>
+          </div>
         </div>
       </div>
       `;

@@ -437,10 +437,9 @@ textarea::placeholder {
   background-color: #fff;
 }
 
-/*
 .modalBody {
-
-} */
+  max-height: 70vh;
+}
 
 .modalHead {
   display: flex;
@@ -891,5 +890,67 @@ textarea::placeholder {
     align-items: center;
     padding: 0;
     margin: 0;
+  }
+
+  /* Modal Projects */
+  #modalProject {
+    background-color: #000;
+    width: 100%;
+    padding: 0;
+  }
+  .modalContent {
+    margin: auto 5%;
+    gap: unset;
+  }
+
+  /*
+  .modalBody {
+
+  } */
+
+  .modalHead {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* .modal-title {
+
+  }
+
+  .modal-tags {
+
+  } */
+
+  .modal-tag {
+    font-size: 1.7vw;
+    line-height: 142%;
+    color: #3c3a39;
+    padding: 1%;
+  }
+
+  /* .modal-img {
+
+  } */
+
+  .modal-description {
+    margin: 3% 0;
+    font-size: 1.7vw;
+    line-height: 130%;
+  }
+
+  .modal-button {
+    padding: 1%;
+    font-size: 1.5vw;
+  }
+
+  .card-img.modal-img {
+    display: flex;
+  }
+
+  .modal-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
