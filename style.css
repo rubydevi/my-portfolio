@@ -392,8 +392,8 @@ textarea::placeholder {
   height: 100%;
   z-index: 9999;
   padding: 5%;
+  padding-top: 15%;
   backdrop-filter: blur(3px);
-  background-color: black; /* delete this before submit */
 }
 
 #modalSetting {
@@ -410,6 +410,8 @@ textarea::placeholder {
 .modalContent {
   padding: 5%;
   margin: 0 auto;
+  height: 80%;
+  overflow: auto;
 }
 
 #modalContentSetting {
@@ -453,9 +455,10 @@ textarea::placeholder {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 32px;
-  line-height: 44px;
+  font-size: 7.8vw;
+  line-height: 110%;
   color: #172b4d;
+  margin-top: 0;
 }
 
 #imgModalWork {
