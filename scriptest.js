@@ -41,6 +41,35 @@ menuList.forEach((list) => {
 //   modalProject.style.display = "none";
 // });
 
+// FEATURED PROJECT STARTS
+const featuredProject = {
+  name: 'Multi-Post Stories',
+  description: "A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
+  image: 'images/desktopVersion/recentWorkCard1.png',
+  technologies: ['CSS', 'HTML', 'Bootstrap', 'Ruby'],
+  liveLink: 'https://rubydevi.github.io/my-portfolio',
+  sourceLink: 'https://github.com/rubydevi/my-portfolio',
+};
+
+const featuredWork = document.getElementById('featuredWork');
+const featuredWorkElem = document.createElement('div');
+
+// Create HTML structure for featured project
+featuredWorkElem.innerHTML = `
+  <div class="card-img">
+    <img id="img_recentWork" src="${featuredProject.image}" alt="${featuredProject.name}">
+  </div>
+  <div class="card-body">
+    <h2 class="card-title">${featuredProject.name}</h2>
+    <p class="card-description">${featuredProject.description}</p>
+    <ul class="card-tags">${featuredProject.technologies.map((tech) => `<li class="card-tag child-tag">${tech}</li>`).join('')}</ul>
+    <button type="button" class="card-button">See project</button>
+  </div>
+`;
+
+featuredWork.appendChild(featuredWorkElem);
+// FEATURED PROJECT ENDS
+
 const projects = [
   {
     name: 'Profesional Art Printing Data',
@@ -162,3 +191,24 @@ openProject.forEach((button, index) => {
     }
   });
 });
+
+// Featured Project Populate Popup
+// const btnSeeFeatured = document.getElementsById('btn_featuredWork')
+
+// btnSeeFeatured.addEventListener('Click', () => {
+//   const img = document.getElementById('img_recentwork');
+//   const title = document.getElementById('projectTitle');
+//   const description = document.getElementById('projectDescrip');
+//   const tags = document.getElementById('projectTags');
+
+//   modalProject.style.display = 'flex';
+//   modalProject.style.overflow = 'auto';
+
+//   modalTitle.textContent = title;
+//   modalTags.innerHTML = tags.map((techTag) => `<li class="card-tag">${techTag}</li>`).join('');
+//   modalImage.src = img;
+//   modalImage.alt = title;
+//   modalDescription.textContent = description;
+//   modalLiveLink.href = project.liveLink;
+//   modalSourceLink.href = project.sourceLink;
+// });

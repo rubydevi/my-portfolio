@@ -27,20 +27,6 @@ menuList.forEach((list) => {
   });
 });
 
-// Projects Populate
-// const closeButton = document.getElementById("btnClose");
-// const openProject = document.querySelectorAll(".card-button");
-// const modalProject = document.getElementById("modalProject");
-
-// openProject.addEventListener("click", function() {
-//   debugger;
-//   modalProject.style.display = "block";
-// });
-
-// closeButton.addEventListener("click", function() {
-//   modalProject.style.display = "none";
-// });
-
 const projects = [
   {
     name: 'Profesional Art Printing Data',
@@ -77,7 +63,7 @@ const projects = [
   {
     name: 'Data Dashboard Healthcare',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-    image: 'images/modalPopup/snapshootPortfolioDesktop.png',
+    image: 'images/workThumbnails/work1.svg',
     technologies: ['HTML', 'Bootstrap', 'Ruby'],
     liveLink: 'https://rubydevi.github.io/my-portfolio',
     sourceLink: 'https://github.com/rubydevi/my-portfolio',
@@ -85,7 +71,7 @@ const projects = [
   {
     name: 'Website Portfolio ',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-    image: 'images/modalPopup/snapshootPortfolioDesktop.png',
+    image: 'images/workThumbnails/work1.svg',
     technologies: ['HTML', 'Bootstrap', 'Ruby'],
     liveLink: 'https://rubydevi.github.io/my-portfolio',
     sourceLink: 'https://github.com/rubydevi/my-portfolio',
@@ -119,6 +105,18 @@ const openProject = document.querySelectorAll('.child-button');
 const modalProject = document.getElementById('modalProject');
 const modalContent = document.getElementById('modalContentProject');
 
+const accessModal = () => {
+  // Add event listener to the dynamically created "Close" button
+  const closeButton = document.getElementById('btnClose');
+
+  closeButton.addEventListener('click', () => {
+    modalProject.style.display = 'none';
+  });
+
+  modalProject.style.display = 'flex';
+  modalProject.style.overflow = 'auto';
+};
+
 openProject.forEach((button, index) => {
   button.addEventListener('click', () => {
     const project = projects[index];
@@ -150,15 +148,51 @@ openProject.forEach((button, index) => {
       </div>
       `;
 
-      // Add event listener to the dynamically created "Close" button
-      const closeButton = document.getElementById('btnClose');
-
-      closeButton.addEventListener('click', () => {
-        modalProject.style.display = 'none';
-      });
-
-      modalProject.style.display = 'flex';
-      modalProject.style.overflow = 'auto';
+      accessModal();
     }
   });
+});
+
+const openFeaturedProjectButton = document.getElementById('btn_featuredWork');
+
+openFeaturedProjectButton.addEventListener('click', () => {
+  const featuredProject = {
+    name: 'Multi-Post Stories',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
+    technologies: ['CSS', 'HTML', 'Bootstrap', 'Ruby'],
+    image: 'images/desktopVersion/recentWorkCard1.png',
+    liveLink: 'https://rubydevi.github.io/my-portfolio',
+    sourceLink: 'https://github.com/rubydevi/my-portfolio',
+  };
+
+  if (featuredProject) {
+    modalContent.innerHTML = `
+    <div class="card-body modalBody">
+      <div class="modalHead">
+        <h1 class="card-title modal-title">${featuredProject.name}</h1>
+        <button id="btnClose" type="button" class="btn-icon">
+          <img src="images/modalPopup/imgCloseDark.png" alt="close">
+        </button>
+      </div>        
+      <ul class="card-tags modal-tags">        
+        ${featuredProject.technologies.map((tech) => `
+        <li class="card-tag modal-tag">${tech}</li>`).join('')}
+      </ul>
+      <div id="mainBody">
+        <div class="card-img modal-img">
+          <img id="imgModalWork" src="${featuredProject.image}" alt="${featuredProject.name}">
+        </div>
+        <div class="modal-side">
+          <p class="card-description modal-description">${featuredProject.description}</p>        
+          <div class="modalButtons">
+            <a href="${featuredProject.liveLink}" class="card-button modal-button">See Live <img src="images/modalPopup/seeLiveDesktop.svg" alt=""></a>
+            <a href="${featuredProject.sourceLink}" class="card-button modal-button">See Source <img src="images/modalPopup/modalGitIcon.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    `;
+
+    accessModal();
+  }
 });
