@@ -106,7 +106,6 @@ const modalProject = document.getElementById('modalProject');
 const modalContent = document.getElementById('modalContentProject');
 
 const accessModal = () => {
-  // Add event listener to the dynamically created "Close" button
   const closeButton = document.getElementById('btnClose');
 
   closeButton.addEventListener('click', () => {
