@@ -942,11 +942,11 @@ textarea::placeholder {
     font-size: 1.1vw;
     line-height: 130%;
   }
-  
+
   .modalButtons {
-      display: flex;
-      justify-content: flex-start;
-      column-gap: 5%;
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 5%;
   }
 
   .modal-button {
