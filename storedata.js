@@ -10,7 +10,7 @@ const prefilledData = () => {
 
 window.onload = prefilledData();
 
-// Create a single JavaScript object with all the data from the entire form and save it in local storage
+// Create a single JavaScript object with all the data from the entire form
 const formInputs = document.querySelectorAll('#form_contact input, #form_contact textarea');
 formInputs.forEach((input) => {
   input.addEventListener('input', () => {
