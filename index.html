@@ -40,7 +40,7 @@
 <!-- Modal Settings Starts -->
 <section id="modalSetting" class="modalContainer">
   <div id="modalContentSetting" class="modalContent">
-    <button id="btnCloseNav" class="btn-icon">
+    <button type="button" id="btnCloseNav" class="btn-icon">
       <img src="images/modalPopup/cross.png" alt="">
     </button>
     <div>
@@ -293,7 +293,7 @@ don’t hesitate to contact me.
   </h1>
   <form action="https://formspree.io/f/xoqzrdep" method="post" class="contact-form" id="form_contact">
     <div class="form-elements">
-      <input type="text" maxlength="30" placeholder="Full name" class="form-input" name="fullname" required>
+      <input type="text" id="txtFullname" maxlength="30" placeholder="Full name" class="form-input" name="fullname" required>
       <input type="email" id="txtEmail" placeholder="Email address" class="form-input" name="email" required>
       <small></small>
       <textarea name="txt_message" id="txt_message" cols="30" rows="5" maxlength="500" placeholder="Write me something..." class="form-input form-textarea" required></textarea>
