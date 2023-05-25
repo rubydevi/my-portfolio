@@ -1,13 +1,9 @@
-// Create form data object
-const formData = {};
-
-const fullName = document.getElementById('txtFullname');
-const emailId = document.getElementById('txtEmail');
-const textMessage = document.getElementById('txt_message');
-
-formData.name = fullName;
-formData.email = emailId;
-formData.message = textMessage;
-
-const jsonFormData = JSON.stringify(formData);
-localStorage.setItem("formData", jsonFormData);
+// Check for pre-filled data to load on form fields.
+const prefilledData = () => {
+  const formData = JSON.parse(localStorage.getItem('formData'));
+  if (formData) {
+    document.getElementById('txtFullname').value = formData.name || '';
+    document.getElementById('txtEmail').value = formData.email || '';
+    document.getElementById('txt_message').value = formData.message || '';
+  }
+};
