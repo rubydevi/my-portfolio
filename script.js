@@ -156,13 +156,13 @@ const openFeaturedProjectButton = document.getElementById('btn_featuredWork');
 
 openFeaturedProjectButton.addEventListener('click', () => {
   const featuredProject = {
-    name: 'Multi-Post Stories',
+    name: 'Vedic Astrology Workshop',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
     technologies: ['CSS', 'HTML', 'Bootstrap', 'Ruby'],
     // image: 'images/workThumbnails/work1.svg',
-    image: 'images/desktopVersion/recentWorkCard1.png',
-    liveLink: 'https://rubydevi.github.io/my-portfolio',
-    sourceLink: 'https://github.com/rubydevi/my-portfolio',
+    image: 'images/workThumbnails/vedic-thumbnail.png',
+    liveLink: 'https://rubydevi.github.io/the-korner-capstone',
+    sourceLink: 'https://github.com/rubydevi/the-korner-capstone',
   };
 
   if (featuredProject) {
